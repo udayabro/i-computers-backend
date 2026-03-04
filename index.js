@@ -1,6 +1,5 @@
 import express, { request } from "express"
 import mongoose from "mongoose"
-import studentRouter from "./routers/studentRouter.js"
 import userRouter from "./routers/userRouter.js"
 import authenticateUser from "./middleweares/authentication.js"
 import productRouter from "./routers/productRouter.js"
@@ -19,7 +18,6 @@ app.use(express.json()) //middleware which use to convert http req data into jso
 
 app.use(authenticateUser)
 
-app.use("/students", studentRouter)
 app.use("/users", userRouter)
 app.use("/products", productRouter)
 
