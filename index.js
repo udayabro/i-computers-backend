@@ -22,3 +22,5 @@ app.use("/users", userRouter)
 app.use("/products", productRouter)
 
 app.listen(3000, () => { console.log("Server is running on port 3000") }) //for one time use
+
+// testing comment 
